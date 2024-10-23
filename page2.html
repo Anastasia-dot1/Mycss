@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Опыт работы</title> 
+    <link rel="stylesheet" href="My.css"> 
+    <style> 
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Устанавливаем минимальную высоту на 100% высоты окна */
+            margin: 0; /* Убираем отступы */
+        }
+        main {
+            flex: 1; /* Позволяет основному контенту занимать оставшееся пространство */
+            padding: 20px; /* Добавляем отступы для основного контента */
+        }
+        ul { 
+            list-style-type: none; /* Убираем стандартные маркеры */ 
+            padding: 0; /* Убираем отступы */ 
+        } 
+        li { 
+            position: relative; /* Для позиционирования галочки */ 
+            padding-left: 20px; /* Отступ слева для галочки */ 
+            line-height: 1.6; /* Увеличиваем промежуток между строками */ 
+        } 
+        li::before { 
+            content: "✔"; /* Символ галочки */ 
+            position: absolute; 
+            left: 0; /* Позиция галочки */ 
+            color: green; /* Цвет галочки */ 
+        } 
+    </style> 
+</head> 
+<body> 
+    <header> 
+        <div class="header-content"> 
+            <h1>Опыт работы</h1> 
+            <p></p> 
+        </div> 
+    </header> 
+    <main> 
+        <ul> 
+            <li>Работа в компании XYZ - разработчик программного обеспечения</li> 
+            <li>Стажировка в компании ABC - веб-разработчик</li> 
+            <li>Фриланс-проекты - создание сайтов и приложений</li> 
+            <li>Участие в хакатонах и конкурсах программирования</li> 
+        </ul> 
+ 
+        <button onclick="location.href='page1.html'">Вернуться на главную страницу</button> 
+    </main> 
+    <footer> 
+        <p>&copy; 2024 Чурсина Анастасия Сергеевна an1_chur@mail.ru 89878956533</p> 
+    </footer> 
+</body> 
+</html>

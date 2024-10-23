@@ -1,0 +1,124 @@
+body {
+    font-family:"Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #F5E7DE;
+    
+
+}
+
+header {
+    
+    background: #F2BFA4 ;
+    color:darkslategrey;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-image {
+    max-width: 30%;
+    height: auto;
+    animation: fadeIn 2s;
+}
+h1, h3 {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: slideIn 1s forwards; /* Анимация сдвига */
+}
+
+h1 {
+    animation-delay: 1s; /* Задержка для первого заголовка */
+}
+
+h3 {
+    animation-delay: 1s; /* Задержка для второго заголовка */
+}
+.info-section{
+    background-color: bisque;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards
+}
+.info-section:nth-child(even) {
+    animation-delay: 0.5s; /* Задержка для четных секций */
+}
+
+.info-section:nth-child(odd) {
+    animation-delay: 0.7s; /* Задержка для нечетных секций */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Создаем адаптивные колонки */
+    grid-column-gap: 20px; /* Отступы между элементами */
+    padding: 20px; /* Отступы внутри контейнера */
+    justify-content: center;
+   
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Создаем адаптивные колонки для навыков */
+    grid-column-gap: 30px; /* Отступы между элементами навыков */
+}
+.skill-item {
+    background-color: #8FBC1F; /* Цвет фона для элемента навыка */
+    padding: 10px; /* Внутренние отступы */
+    border-radius: 20px; /* Закругленные углы */
+    text-align: center; /* Центрируем текст внутри элемента навыка */
+}
+
+
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    background: #F2BFA4 ;
+    color: darkslategrey;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #8FBC8F;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #8FBC8F;
+    color: darkslategrey;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h2, p{
+    text-align: center;
+}
+
